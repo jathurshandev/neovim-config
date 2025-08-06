@@ -34,6 +34,6 @@ keymap("v", "m", JumpAfterForward, { noremap = true, silent = true, desc = "Jump
 keymap("v", "M", JumpBeforeBackward, { noremap = true, silent = true, desc = "Jump before a character backward" })
 
 -- Terminal mode
-keymap('t', '<Esc>', '<C-\\><C-n>', { noremap = true, desc = "Escape from terminal mode" })
+keymap('t', '<Leader><Esc>', '<C-\\><C-n>', { noremap = true, desc = "Escape from terminal mode" })
 
 return keybinds
