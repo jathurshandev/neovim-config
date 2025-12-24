@@ -6,6 +6,16 @@ local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 local keybinds = require("keybinds")
 
 local plugins = {
+  -- Theme
+  {
+    "Mofiqul/adwaita.nvim",
+    priority = 200,
+    lazy = false,
+    config = function()
+      vim.cmd("colorscheme adwaita")
+    end,
+  },
+
   -- Syntax highlighting
   {
     "nvim-treesitter/nvim-treesitter",
