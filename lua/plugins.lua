@@ -52,6 +52,7 @@ local plugins = {
   {
     "nvim-tree/nvim-tree.lua",
     dependencies = { "nvim-tree/nvim-web-devicons" },
+    keys = keybinds.nvim_tree,
     priority = 130,
   },
 

@@ -11,6 +11,10 @@ keybinds.fzf = {
   { "<Leader>b", "<CMD>Buffers<CR>", desc = "Find buffers" },
 }
 
+keybinds.nvim_tree = {
+  { "<Leader>t", "<CMD>NvimTreeToggle<CR>", desc = "Toogle file tree"}
+}
+
 -- Jump after character forward (similar to t but after character)
 function JumpAfterForward()
   local char = vim.fn.nr2char(vim.fn.getchar())
