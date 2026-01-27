@@ -12,7 +12,8 @@ keybinds.fzf = {
 }
 
 keybinds.nvim_tree = {
-  { "<Leader>t", "<CMD>NvimTreeToggle<CR>", desc = "Toogle file tree"}
+  { "<Leader>tt", "<CMD>NvimTreeFocus<CR>", desc = "Focus current file in tree"},
+  { "<Leader>tc", "<CMD>NvimTreeClose<CR>", desc = "Close file tree"}
 }
 
 -- Jump after character forward (similar to t but after character)
