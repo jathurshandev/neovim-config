@@ -11,6 +11,7 @@ core.relativenumber = true
 
 -- Able to undo file after exit
 core.undofile = true
+core.undodir = configpath .. '/undo//'
 
 -- Better split windows
 core.splitbelow = true
@@ -21,7 +22,3 @@ core.expandtab = true
 core.tabstop = 2
 core.shiftwidth = 0 -- defaults to tabstop for consitency
 -- vim-sleuth can be used to determine automatically those values
-
--- Undo dir
-core.undodir = configpath .. '/undo//'
-core.undofile = true
