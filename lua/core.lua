@@ -3,6 +3,7 @@
 ]]
 
 local core = vim.opt
+local configpath = vim.fn.stdpath('config') 
 
 -- Lines
 core.number = true
@@ -21,4 +22,6 @@ core.tabstop = 2
 core.shiftwidth = 0 -- defaults to tabstop for consitency
 -- vim-sleuth can be used to determine automatically those values
 
-
+-- Undo dir
+core.undodir = configpath .. '/undo//'
+core.undofile = true
