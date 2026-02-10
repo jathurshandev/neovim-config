@@ -33,14 +33,10 @@ end
 -- Normal mode
 keymap("n", "m", JumpAfterForward, { noremap = true, silent = true, desc = "Jump after a character forward" })
 keymap("n", "M", JumpBeforeBackward, { noremap = true, silent = true, desc = "Jump before a character backward" })
-keymap("n", "<S-Tab>", '<<', { noremap = true, silent = true, desc = "Left indent" })
-keymap("n", "<Tab>", '>>', { noremap = true, silent = true, desc = "Right indent" })
 
 -- Visual mode
 keymap("v", "m", JumpAfterForward, { noremap = true, silent = true, desc = "Jump after a character forward" })
 keymap("v", "M", JumpBeforeBackward, { noremap = true, silent = true, desc = "Jump before a character backward" })
-keymap("v", "<S-Tab>", '<', { noremap = true, silent = true, desc = "Left indent" })
-keymap("v", "<Tab>", '>', { noremap = true, silent = true, desc = "Right indent" })
 
 -- Terminal mode
 keymap('t', '<Leader><Esc>', '<C-\\><C-n>', { noremap = true, desc = "Escape from terminal mode" })
