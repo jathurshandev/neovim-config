@@ -87,6 +87,11 @@ local plugins = {
     priority = 300,
   },
   ]]
+
+  {
+    "https://github.com/lewis6991/gitsigns.nvim",
+    keys = keybinds.gitsigns,
+  },
 }
 
 -- Install lazy.nvim if not present

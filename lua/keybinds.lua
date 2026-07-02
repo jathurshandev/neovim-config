@@ -16,27 +16,7 @@ keybinds.nvim_tree = {
   { "<Leader>tc", "<CMD>NvimTreeClose<CR>", desc = "Close file tree"}
 }
 
--- Jump after character forward (similar to t but after character)
-function JumpAfterForward()
-  local char = vim.fn.nr2char(vim.fn.getchar())
-  local keystrokes = vim.v.count1 .. "f" .. char .. "l"
-  vim.fn.execute("normal! " .. keystrokes)
-end
-
--- Jump before a character backward (similar to T but before character)
-function JumpBeforeBackward()
-  local char = vim.fn.nr2char(vim.fn.getchar())
-  local keystrokes = vim.v.count1 .. "F" .. char .. "h"
-  vim.fn.execute("normal! " .. keystrokes)
-end
-
--- Normal mode
-keymap("n", "m", JumpAfterForward, { noremap = true, silent = true, desc = "Jump after a character forward" })
-keymap("n", "M", JumpBeforeBackward, { noremap = true, silent = true, desc = "Jump before a character backward" })
-
--- Visual mode
-keymap("v", "m", JumpAfterForward, { noremap = true, silent = true, desc = "Jump after a character forward" })
-keymap("v", "M", JumpBeforeBackward, { noremap = true, silent = true, desc = "Jump before a character backward" })
+keybinds.gitsigns = {}
 
 -- Terminal mode
 keymap('t', '<Leader><Esc>', '<C-\\><C-n>', { noremap = true, desc = "Escape from terminal mode" })

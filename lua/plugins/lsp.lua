@@ -4,6 +4,10 @@ require("mason-lspconfig").setup({
   ensure_installed = {
     "lua_ls",
     "omnisharp",
-    "gopls"
+    "gopls",
+    "deno",
+    "rnix-lsp",
+    "marksman",
+    "basedpyright",
   }
 })
