@@ -1,0 +1,7 @@
+require("plugins-config.tree_sitter")
+require("plugins-config.lsp")
+require("plugins-config.nvim_tree")
+require("plugins-config.gitsigns")
+require("plugins-config.autopairs")
+require("plugins-config.nvim_gomove")
+require("plugins-config.blink")

@@ -32,34 +32,12 @@ local plugins = {
       "williamboman/mason.nvim",            -- LSP Server
       "williamboman/mason-lspconfig.nvim",  -- Nvim lsp
     },
-    priority = 110,
   },
 
   -- Autocomplete
   {
     'saghen/blink.cmp',
-    version = '1.*',
-
-    ---@module 'blink.cmp'
-    ---@type blink.cmp.Config
-    opts = {
-      keymap = { preset = 'super-tab' },
-
-      appearance = {
-        nerd_font_variant = 'mono'
-      },
-
-      completion = { documentation = { auto_show = false } },
-
-      sources = {
-        default = { 'lsp', 'path', 'snippets', 'buffer' },
-      },
-
-      fuzzy = { implementation = "prefer_rust_with_warning" }
-    },
     opts_extend = { "sources.default" },
-
-    priority = 120
   },
 
   -- File explorer
@@ -67,26 +45,14 @@ local plugins = {
     "nvim-tree/nvim-tree.lua",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     keys = keybinds.nvim_tree,
-    priority = 130,
   },
 
   -- Fuzzy finder
   {
     "junegunn/fzf.vim",
-    dependencies = {
-      "junegunn/fzf",
-    },
+    dependencies = { "junegunn/fzf", },
     keys = keybinds.fzf,
-    priority = 200,
   },
-
-  -- Key binding helper (meh)
-  --[[
-  {
-    "folke/which-key.nvim",
-    priority = 300,
-  },
-  ]]
 
   -- Git signs
   {
@@ -107,16 +73,16 @@ local plugins = {
   -- Auto pairs
   {
     "windwp/nvim-autopairs",
-    event = "InsertEnter",
-    config = true,
-    opts = {
-      map_bs = false -- For smart backspace
-    },
   },
 
   -- Smart backspace
   {
     "qwavies/smart-backspace.nvim",
+  },
+
+  -- Move chunks of lines with auto ident
+  {
+    "booperlv/nvim-gomove",
   },
 }
 
@@ -137,3 +103,6 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Load plugins
 require("lazy").setup(plugins)
+
+-- Configure plugins
+require("plugins-config.init")
