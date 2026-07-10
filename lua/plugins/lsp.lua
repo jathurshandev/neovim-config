@@ -9,5 +9,6 @@ require("mason-lspconfig").setup({
     "rnix-lsp",
     "marksman",
     "basedpyright",
+    "bashls",
   }
 })
