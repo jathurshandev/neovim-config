@@ -72,9 +72,9 @@ local plugins = {
 
   -- Fuzzy finder
   {
-    "https://github.com/junegunn/fzf.vim",
+    "junegunn/fzf.vim",
     dependencies = {
-      "https://github.com/junegunn/fzf",
+      "junegunn/fzf",
     },
     keys = keybinds.fzf,
     priority = 200,
@@ -88,9 +88,35 @@ local plugins = {
   },
   ]]
 
+  -- Git signs
   {
-    "https://github.com/lewis6991/gitsigns.nvim",
+    "lewis6991/gitsigns.nvim",
     keys = keybinds.gitsigns,
+  },
+
+  -- Vim sleuth (auto shiftWidth and expandTab)
+  {
+    "tpope/vim-sleuth"
+  },
+
+  -- Rainbow delimiters
+  {
+    "HiPhish/rainbow-delimiters.nvim"
+  },
+
+  -- Auto pairs
+  {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    config = true,
+    opts = {
+      map_bs = false -- For smart backspace
+    },
+  },
+
+  -- Smart backspace
+  {
+    "qwavies/smart-backspace.nvim",
   },
 }
 
