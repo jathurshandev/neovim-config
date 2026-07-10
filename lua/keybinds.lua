@@ -18,6 +18,13 @@ keybinds.nvim_tree = {
 
 keybinds.gitsigns = {}
 
+keybinds.blink = {
+  preset = 'none',
+  ['<Tab>'] = { 'select_next', 'fallback' },
+  ['<S-Tab>'] = { 'select_prev', 'fallback' },
+  ['<Enter>'] = { 'select_and_accept', 'fallback' },
+}
+
 -- Terminal mode
 keymap('t', '<Leader><Esc>', '<C-\\><C-n>', { noremap = true, desc = "Escape from terminal mode" })
 

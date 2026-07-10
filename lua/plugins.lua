@@ -37,6 +37,23 @@ local plugins = {
   -- Autocomplete
   {
     'saghen/blink.cmp',
+    version = '1.*',
+    ---@module 'blink.cmp'
+    ---@type blink.cmp.Config
+    opts = {
+      keymap = keybinds.blink,
+      appearance = { nerd_font_variant = 'mono' },
+      completion = {
+	documentation = { auto_show = false },
+	list = {
+	  selection = {
+	    auto_insert = false,
+	  },
+	},
+      },
+      sources = { default = { 'lsp', 'path', 'snippets', 'buffer' }, },
+      fuzzy = { implementation = "prefer_rust_with_warning" }
+    },
     opts_extend = { "sources.default" },
   },
 
@@ -88,14 +105,14 @@ local plugins = {
 
 -- Install lazy.nvim if not present
 if not vim.loop.fs_stat(lazypath) then
-	vim.fn.system({
-		"git",
-		"clone",
-		"--filter=blob:none",
-		"http://github.com/folke/lazy.nvim.git",
-		"--branch=stable",
-		lazypath,
-	})
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "http://github.com/folke/lazy.nvim.git",
+    "--branch=stable",
+    lazypath,
+  })
 end
 
 -- Load lazy.nvim
