@@ -16,7 +16,10 @@ keybinds.nvim_tree = {
   { "<Leader>tc", "<CMD>NvimTreeClose<CR>", desc = "Close file tree"}
 }
 
-keybinds.gitsigns = {}
+keybinds.gitsigns = {
+  { "<Leader>gs", "<CMD>Gitsigns stage_hunk<CR>", desc = "Stage current hunk" },
+  { "<Leader>gp", "<CMD>Gitsigns preview_hunk_inline<CR>", desc = "Preview hunk" }
+}
 
 keybinds.blink = {
   preset = 'none',
