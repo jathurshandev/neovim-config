@@ -20,6 +20,21 @@ keybinds.gitsigns = {
   { "<Leader>gs", "<CMD>Gitsigns stage_hunk<CR>", desc = "Stage current hunk" },
   { "<Leader>gp", "<CMD>Gitsigns preview_hunk_inline<CR>", desc = "Preview hunk" }
 }
+keymap("n", "]c", function()
+  if vim.wo.diff then
+    vim.cmd.normal({ "]c", bang = true })
+  else
+    vim.cmd("Gitsigns next_hunk")
+  end
+end, { desc = "Move to next change" })
+
+keymap("n", "[c", function()
+  if vim.wo.diff then
+    vim.cmd.normal({ "[c", bang = true })
+  else
+    vim.cmd("Gitsigns prev_hunk")
+  end
+end, { desc = "Move to previous change" })
 
 keybinds.blink = {
   preset = 'none',
