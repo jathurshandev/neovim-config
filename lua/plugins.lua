@@ -101,6 +101,11 @@ local plugins = {
   {
     "booperlv/nvim-gomove",
   },
+
+  -- Sticky scroll like VSCode
+  {
+    "nvim-treesitter/nvim-treesitter-context",
+  },
 }
 
 -- Install lazy.nvim if not present
