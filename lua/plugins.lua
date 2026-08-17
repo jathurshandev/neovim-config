@@ -106,6 +106,11 @@ local plugins = {
   {
     "nvim-treesitter/nvim-treesitter-context",
   },
+
+  -- Identation guides
+  {
+    "lukas-reineke/indent-blankline.nvim"
+  }
 }
 
 -- Install lazy.nvim if not present
