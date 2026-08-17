@@ -44,7 +44,7 @@ keybinds.blink = {
 }
 
 -- Terminal mode
-keymap('t', '<Leader><Esc>', '<C-\\><C-n>', { noremap = true, desc = "Escape from terminal mode" })
+keymap('t', '<C-c>', '<C-\\><C-n>', { noremap = true, desc = "Escape from terminal mode" })
 
 -- Normal mode
 keymap('n', '<Leader>d', function() vim.diagnostic.open_float(nil, { focus = false, scope = 'cursor' }) end, { desc = 'Diagnostics under cursor' })
