@@ -18,7 +18,8 @@ keybinds.nvim_tree = {
 
 keybinds.gitsigns = {
   { "<Leader>gs", "<CMD>Gitsigns stage_hunk<CR>", desc = "Stage current hunk" },
-  { "<Leader>gp", "<CMD>Gitsigns preview_hunk_inline<CR>", desc = "Preview hunk" }
+  { "<Leader>gp", "<CMD>Gitsigns preview_hunk_inline<CR>", desc = "Preview hunk" },
+  { "<Leader>gr", "<CMD>Gitsigns reset_hunk<CR>", desc = "Restore hunk" }
 }
 keymap("n", "]c", function()
   if vim.wo.diff then
