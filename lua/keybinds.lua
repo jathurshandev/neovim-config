@@ -50,4 +50,8 @@ keymap('t', '<C-c>', '<C-\\><C-n>', { noremap = true, desc = "Escape from termin
 -- Normal mode
 keymap('n', '<Leader>d', function() vim.diagnostic.open_float(nil, { focus = false, scope = 'cursor' }) end, { desc = 'Diagnostics under cursor' })
 
+-- Scroll + center cursor
+keymap('n', '<C-d>', '<C-d>zz', { noremap = true, desc = "Scrolls downward and center cursor" })
+keymap('n', '<C-u>', '<C-u>zz', { noremap = true, desc = "Scrolls upward and center cursor" })
+
 return keybinds
