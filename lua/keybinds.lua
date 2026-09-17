@@ -9,6 +9,7 @@ keybinds.fzf = {
   { "<Leader>f", "<CMD>Files<CR>", desc = "Search files" },
   { "<Leader>F", "<CMD>Rg<CR>", desc = "Search project" },
   { "<Leader>b", "<CMD>Buffers<CR>", desc = "Find buffers" },
+  { "<Leader>B", "<CMD>Lines<CR>", desc = "Find line in buffers" },
 }
 
 keybinds.nvim_tree = {
