@@ -22,3 +22,6 @@ core.expandtab = true
 core.tabstop = 2
 core.shiftwidth = 0 -- defaults to tabstop for consitency
 -- vim-sleuth can be used to determine automatically those values
+
+-- Use system clipboard
+core.clipboard = "unnamedplus"
