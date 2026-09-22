@@ -29,8 +29,8 @@ local plugins = {
   {
     "neovim/nvim-lspconfig",
     dependencies = {
-      "williamboman/mason.nvim",            -- LSP Server
-      "williamboman/mason-lspconfig.nvim",  -- Nvim lsp
+      "williamboman/mason.nvim",           -- LSP Server
+      "williamboman/mason-lspconfig.nvim", -- Nvim lsp
     },
   },
 
@@ -44,12 +44,12 @@ local plugins = {
       keymap = keybinds.blink,
       appearance = { nerd_font_variant = 'mono' },
       completion = {
-	documentation = { auto_show = false },
-	list = {
-	  selection = {
-	    auto_insert = false,
-	  },
-	},
+        documentation = { auto_show = false },
+        list = {
+          selection = {
+            auto_insert = false,
+          },
+        },
       },
       sources = { default = { 'lsp', 'path', 'snippets', 'buffer' }, },
       fuzzy = { implementation = "prefer_rust_with_warning" }

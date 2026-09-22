@@ -6,22 +6,22 @@ vim.g.mapleader = " "
 
 -- Fzf keybinds
 keybinds.fzf = {
-  { "<Leader>f", "<CMD>Files<CR>", desc = "Search files" },
-  { "<Leader>F", "<CMD>Rg<CR>", desc = "Search project" },
+  { "<Leader>f", "<CMD>Files<CR>",   desc = "Search files" },
+  { "<Leader>F", "<CMD>Rg<CR>",      desc = "Search project" },
   { "<Leader>b", "<CMD>Buffers<CR>", desc = "Find buffers" },
-  { "<Leader>B", "<CMD>Lines<CR>", desc = "Find line in buffers" },
+  { "<Leader>B", "<CMD>Lines<CR>",   desc = "Find line in buffers" },
 }
 
 keybinds.nvim_tree = {
-  { "<Leader>tt", "<CMD>NvimTreeFocus<CR>", desc = "Focus current file in tree"},
-  { "<Leader>tc", "<CMD>NvimTreeClose<CR>", desc = "Close file tree"}
+  { "<Leader>tt", "<CMD>NvimTreeFocus<CR>", desc = "Focus current file in tree" },
+  { "<Leader>tc", "<CMD>NvimTreeClose<CR>", desc = "Close file tree" }
 }
 
 keybinds.gitsigns = {
-  { "<Leader>gs", "<CMD>Gitsigns stage_hunk<CR>", desc = "Stage current hunk" },
+  { "<Leader>gs", "<CMD>Gitsigns stage_hunk<CR>",          desc = "Stage current hunk" },
   { "<Leader>gp", "<CMD>Gitsigns preview_hunk_inline<CR>", desc = "Preview hunk" },
-  { "<Leader>gr", "<CMD>Gitsigns reset_hunk<CR>", desc = "Restore hunk" },
-  { "<Leader>gb", "<CMD>Gitsigns blame<CR>", desc = "Blame" },
+  { "<Leader>gr", "<CMD>Gitsigns reset_hunk<CR>",          desc = "Restore hunk" },
+  { "<Leader>gb", "<CMD>Gitsigns blame<CR>",               desc = "Blame" },
 }
 keymap("n", "]c", function()
   if vim.wo.diff then
@@ -50,7 +50,8 @@ keybinds.blink = {
 keymap('t', '<C-c>', '<C-\\><C-n>', { noremap = true, desc = "Escape from terminal mode" })
 
 -- Normal mode
-keymap('n', '<Leader>d', function() vim.diagnostic.open_float(nil, { focus = false, scope = 'cursor' }) end, { desc = 'Diagnostics under cursor' })
+keymap('n', '<Leader>d', function() vim.diagnostic.open_float(nil, { focus = false, scope = 'cursor' }) end,
+  { desc = 'Diagnostics under cursor' })
 
 -- Scroll + center cursor
 keymap('n', '<C-d>', '<C-d>zz', { noremap = true, desc = "Scrolls downward and center cursor" })

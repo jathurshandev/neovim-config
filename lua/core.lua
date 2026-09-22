@@ -3,7 +3,7 @@
 ]]
 
 local core = vim.opt
-local configpath = vim.fn.stdpath('config') 
+local configpath = vim.fn.stdpath('config')
 
 -- Lines
 core.number = true
