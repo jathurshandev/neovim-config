@@ -39,6 +39,8 @@ keymap("n", "[c", function()
   end
 end, { desc = "Move to previous change" })
 
+keymap("n", "<Leader>s", function() vim.lsp.buf.format() end, { desc = "Format" })
+
 keybinds.blink = {
   preset = 'none',
   ['<Tab>'] = { 'select_next', 'fallback' },
