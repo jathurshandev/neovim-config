@@ -8,6 +8,9 @@ require("mason-lspconfig").setup({
     "marksman",
     "basedpyright",
     "bashls",
-    "angular-language-server"
+    "angularls",
+    "tsc",
+    "docker_language_server",
+    "rnix",
   }
 })
