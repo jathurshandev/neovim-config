@@ -110,6 +110,11 @@ local plugins = {
   -- Identation guides
   {
     "lukas-reineke/indent-blankline.nvim"
+  },
+
+  -- C# and mostly Unity
+  {
+    "seblyng/roslyn.nvim"
   }
 }
 
