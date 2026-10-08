@@ -111,11 +111,6 @@ local plugins = {
   {
     "lukas-reineke/indent-blankline.nvim"
   },
-
-  -- C# and mostly Unity
-  {
-    "seblyng/roslyn.nvim"
-  }
 }
 
 -- Install lazy.nvim if not present
