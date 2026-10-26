@@ -25,3 +25,6 @@ core.shiftwidth = 0 -- defaults to tabstop for consitency
 
 -- Use system clipboard
 core.clipboard = "unnamedplus"
+
+-- Change working dir when changing file
+core.autochdir = true
