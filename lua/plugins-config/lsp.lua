@@ -11,6 +11,7 @@ require("mason-lspconfig").setup({
     "angularls",
     "tsc",
     "docker_language_server",
+    "spectral", -- json & yaml
     "rnix",
   }
 })
